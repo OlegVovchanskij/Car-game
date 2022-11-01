@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gameSpace{
+    width: 100%;
+    height: 100vh;
+    background: url("img/bg5.jpg"),no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.logo{
+    margin-bottom: 100px;
+}
+.road{
+    margin-bottom: 200px;
+    position: relative;
+    width: 100%;
+}
+.road-img{
+    position: absolute;
+}
+.car{
+    position: absolute;
+    z-index: 2;
+    top: 40px;
+    left: 80px;
+    display: flex;
+    align-items: center;
+
+}
+.light{
+    width: 80px;
+    height: 20px;
+    display: none;
+    position: absolute;
+
+
+}
+
+.stop-light{
+    background-color: red;
+    filter: blur(30px);
+    left: -80px;
+}
+.car-light{
+    height: 10px;
+    width: 120px;
+    background-color: #ffef93;
+    filter: blur(30px);
+    left: 128px;
+}
+.controlls{
+    width: 350px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255,255,255,.3);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+
+}
+.top-sitebar, .bottom-sitebar{
+    height: 50%;
+    display: flex;
+
+}
+
+.controlls-item {
+    margin-right: 30px;
+    cursor: pointer;
+}
+.top-sitebar .controlls-item:last-child,.bottom-sitebar.controlls-item:last-child{
+    margin-right: 0;
+}
+.car-skins{
+
+    height: 128px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,.3);
+    border-radius: 20px;
+    padding: 20px;
+    column-gap: 20px;
+}
+.car-skins img{
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform .3s linear;
+
+}
+
+.show{
+    display: flex;
+}
+
+
+
+
